@@ -56,7 +56,7 @@ def top_n(query,model_name,column_name):
         K=pd.read_csv('Skipgram_vec.csv')
     else:
         
-        word2vec_model=Word2Vec.load('model_Fasttext1.bin')
+        word2vec_model=Word2Vec.load('model_Fasttext.bin')
         K=pd.read_csv('Fasttext_vec.csv')
     #input vectors
     query=preprocessing_input(query)
