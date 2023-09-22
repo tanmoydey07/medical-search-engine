@@ -12,7 +12,7 @@ import numpy as np
 
 
 def read_data():
-    df=pd.read_csv('Dimension-covid.csv')   #for preprocessing
-    df1=pd.read_csv('Dimension-covid.csv')  #for returning results
+    df=pd.read_csv('https://drive.google.com/u/0/uc?id=1R1w1K9gzfMKyDjG9SpoTu0KsC48Q1XP5&export=download')   #for preprocessing
+    df1=pd.read_csv('https://drive.google.com/u/0/uc?id=1R1w1K9gzfMKyDjG9SpoTu0KsC48Q1XP5&export=download')  #for returning results
     return df.iloc[:100,:]
 
