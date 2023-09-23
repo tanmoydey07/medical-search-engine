@@ -54,13 +54,9 @@ def top_n(query,model_name,column_name):
    
         word2vec_model=Word2Vec.load('model_Skipgram.bin')
         K=pd.read_csv('Skipgram_vec.csv')
-    else:
-       import os
-        filepath = os.path.join('https:', 'github.com', 'tanmoydey07', 'medical-search-engine', 'blob', 'main', 'model_Fasttext.bin')
-        with open(filepath, 'rb') as file1:
-            word2vec_model = pickle.load(file1)
-            file1.close() 
-        # word2vec_model=Word2Vec.load('model_Fasttext.bin')
+    elif model_name=='Fasttext':
+       
+        word2vec_model=Word2Vec.load('model_Fasttext.bin')
         K=pd.read_csv('FastText_vec.csv')
     #input vectors
     query=preprocessing_input(query)
