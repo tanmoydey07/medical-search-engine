@@ -52,12 +52,12 @@ def top_n(query,model_name,column_name):
     if model_name=='Skipgram':
         
    
-        word2vec_model=Word2Vec.load('https://drive.google.com/u/0/uc?id=1l0aZLOxPyGMo2FOjurOq5KAyikPU-aPd&export=download')
-        K=pd.read_csv('https://drive.google.com/u/0/uc?id=1ZouAuCFOQifQaQqHcsPFNzB6NKLIQbaX&export=download')
+        word2vec_model=Word2Vec.load('model_Skipgram.bin')
+        K=pd.read_csv('Skipgram_vec.csv')
     else:
         
-        word2vec_model=Word2Vec.load('https://drive.google.com/u/0/uc?id=1PmUYIncF7RaRghD9jxM9kwGSCMQbHAZv&export=download')
-        K=pd.read_csv('https://drive.google.com/u/0/uc?id=1z2QQ_LfN5CnwMXtyuCfVrxfsw8sEPSfv&export=download')
+        word2vec_model=Word2Vec.load('model_Fasttext.bin')
+        K=pd.read_csv('FastText_vec.csv')
     #input vectors
     query=preprocessing_input(query)
     
