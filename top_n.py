@@ -54,7 +54,7 @@ def top_n(query,model_name,column_name):
    
         word2vec_model=Word2Vec.load('model_Skipgram.bin')
         K=pd.read_csv('Skipgram_vec.csv')
-    elif model_name=='Fasttext':
+    if model_name=='Fasttext':
        
         word2vec_model=Word2Vec.load('model_Fasttext.bin')
         K=pd.read_csv('FastText_vec.csv')
