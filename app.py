@@ -66,7 +66,7 @@ def main():
       
     
 
-    st.title("Medical Search engine")      #title of our app
+    st.title("Medical Search Engine")      #title of our app
     st.write('Select Model')       #text below title
 
     
